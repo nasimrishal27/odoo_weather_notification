@@ -15,5 +15,4 @@ class WeatherNotification(http.Controller):
                 weather_data = city_req.json()
         except Exception:
             pass
-        print(weather_data)
         return weather_data
