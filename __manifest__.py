@@ -2,14 +2,14 @@
 {
     'name': "Weather Notification",
     'version': '1.0',
-    'depends': ['base'],
+    'depends': ['base_setup'],
     'sequence': 2,
     'author': "Suni",
     'category': 'All',
     'description': """
     """,
     'data': [
-        'views/res_user_views.xml',
+        'views/res_config_settings_views.xml',
     ],
     'assets': {
        'web.assets_backend': [
