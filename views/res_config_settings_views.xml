@@ -6,22 +6,6 @@
         <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//block[@name='integration']" position="inside">
-<!--                <div class="row mt16 o_settings_container">-->
-<!--                    <div class="col-12 col-lg-6 o_setting_box">-->
-<!--                        <div class="o_setting_left_pane">-->
-<!--                            <field name="enable_delivery"/>-->
-<!--                        </div>-->
-<!--                        <div class="o_setting_right_pane">-->
-<!--                            <label for="enable_delivery"/>-->
-<!--                            <div class="text-muted">-->
-<!--                                Delivery products based on order types-->
-<!--                            </div>-->
-<!--                            <div class="content-group mt16" invisible="enable_delivery == False">-->
-<!--                                <field name="delivery_methods" widget="many2many_tags"/>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
                 <setting id="weather_api_key" help="Enable the weather notification.">
                     <field name="weather_api_key"/>
                 </setting>
@@ -29,26 +13,3 @@
         </field>
     </record>
 </odoo>
-
-<!--<div id="languages">-->
-<!--                            <block title="Languages" name="languages_setting_container">-->
-<!--                                <setting id="languages_setting">-->
-<!--                                    &lt;!&ndash; TODO This is not an ideal solution but it looks ok on the interface &ndash;&gt;-->
-<!--                                    <div class="w-50">-->
-<!--                                        <field name="language_count" class="w-auto ps-1 fw-bold"/>-->
-<!--                                        <span class='o_form_label' invisible="language_count &gt; 1">-->
-<!--                                            Language-->
-<!--                                        </span>-->
-<!--                                        <span class='o_form_label' invisible="language_count &lt;= 1">-->
-<!--                                            Languages-->
-<!--                                        </span>-->
-<!--                                    </div>-->
-<!--                                    <div class="mt8">-->
-<!--                                        <button name="%(base.action_view_base_language_install)d" icon="oi-arrow-right" type="action" string="Add Languages" class="btn-link"/>-->
-<!--                                    </div>-->
-<!--                                    <div class="mt8" groups="base.group_no_one">-->
-<!--                                        <button name="%(base.res_lang_act_window)d" icon="oi-arrow-right" type="action" string="Manage Languages" class="btn-link"/>-->
-<!--                                    </div>-->
-<!--                                </setting>-->
-<!--                            </block>-->
-<!--                        </div>-->
